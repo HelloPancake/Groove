@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
-const Greeting = ({ currentUser, logout }) => {
+const Greeting = ({ currentUser, logOut }) => {
     const sessionLinks = () => (
         <nav className="login-signup">
             <Link to="/login">Login</Link>
@@ -14,10 +14,10 @@ const Greeting = ({ currentUser, logout }) => {
     const personalGreeting = () => (
         <hgroup className="header-group">
             <h2 className="header-name">Hi, {currentUser.username}!</h2>
-            <button className="header-button" onClick={logout}>Log Out</button>
+            <button className="header-button" onClick={logOut}>Log Out</button>
         </hgroup>
     );
-
+        
     return currentUser ? personalGreeting() : sessionLinks();
 };
 

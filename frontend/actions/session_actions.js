@@ -12,9 +12,8 @@ const receiveErrors = (errors) => ({
     errors: errors,
     type: RECEIVE_SESSION_ERRORS
 })
-const logOutCurrentUser = (user) => ({
-    userId: user.id,
-    type: RECEIVE_SESSION_ERRORS
+const logOutCurrentUser = () => ({
+    type: LOGOUT_CURRENT_USER
 })
 
 
@@ -31,6 +30,6 @@ export const logIn = (user) => (dispatch) => {
 
 export const logOut = () => (dispatch) => {
     return (
-        APIUtil.logIn().then(user => dispatch(logOutCurrentUser(user)))
+        APIUtil.logOut().then(user => dispatch(logOutCurrentUser()))
     )
 }

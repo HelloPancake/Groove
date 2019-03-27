@@ -22,13 +22,18 @@ class SessionForm extends React.Component {
         e.preventDefault();
         const user = Object.assign({}, this.state);
         this.props.processForm(user);
+        this.setState({
+            username: '',
+            password: ''})
+       
+
     }
 
     renderErrors() {
-        let errors = Object.values(this.props.errors)
+        
         return (
             <ul>
-                {errors.map((error, i) => (
+                {this.props.errors.map((error, i) => (
                      <li key={`error-${i}`}>
                          {error}
                     </li>
