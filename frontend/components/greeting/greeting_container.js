@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { logOut } from '../../actions/session_actions';
 import Greeting from './greeting'
+import { withRouter } from 'react-router-dom';
+
 
 const mapStateToProps = ({ session, entities: { users } }) => {
     return({
@@ -14,4 +16,4 @@ const mapDispatchToProps = (dispatch) => {
         logOut: () => dispatch(logOut())
     })
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Greeting);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Greeting));

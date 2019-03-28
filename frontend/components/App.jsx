@@ -4,14 +4,15 @@ import GreetingContainer from './greeting/greeting_container';
 import SignUpFormContainer from './session_form/signup_form_container';
 import LogInFormContainer from './session_form/login_form_container';
 import { AuthRoute } from '../util/route_util';
+import NavBar from './nav/nav_bar'
 
 const App = () => (
     <div>
+            <NavBar />
         <header>
-            <h1>Groove</h1>
-            <GreetingContainer />
+            
         </header>
-
+        
         <AuthRoute path="/login" component={LogInFormContainer} />
         <AuthRoute path="/signup" component={SignUpFormContainer} />
     </div>

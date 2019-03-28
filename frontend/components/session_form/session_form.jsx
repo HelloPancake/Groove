@@ -7,7 +7,9 @@ class SessionForm extends React.Component {
         this.state = {
             username: '',
             password: '',
-            email: ''
+            email: '',
+          
+            
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -46,44 +48,64 @@ class SessionForm extends React.Component {
     render() {
 
         
-        return (
-            <div className="login-form-container">
-                <form onSubmit={this.handleSubmit} className="login-form-box">
-                    Welcome to Groove!
-          <br />
-                    Please {this.props.formType} or {this.props.navLink}
-                    {this.renderErrors()}
-                    <div className="login-form">
-                        <br />
-                        <label>Username:
-              <input type="text"
+    return (
+     <div className="login-form-container">
+        <form onSubmit={this.handleSubmit} className="login-form-box">
+            <div className="title-text-head">groove</div>
+             <div className="title-text-underhead"> </div>
+             {/* Please {this.props.formType} or {this.props.navLink} */}
+                    
+             <div className="login-form">
+                        
+            <label>
+                <input type="text"
                                 value={this.state.username}
                                 onChange={this.update('username')}
-                                className="login-input"
-                            />
-                        </label>
-                        <br />
-                        <label>Password:
-              <input type="password"
-                                value={this.state.password}
-                                onChange={this.update('password')}
-                                className="login-input"
-                            />
-                        </label>
-                        <br />
-                
-                        {this.props.formType == 'login' ? (null) : <label>Email:
-              <input type="text"
+                                className="login-username"
+                                placeholder="username"
+                />
+                </label>
+                <div className="grey-border">
+                    <div></div>
+                </div>
+
+
+                {this.props.formType == 'login' ? (null) : (
+                    <>
+                        
+                        <label>
+                            <input type="text"
                                 value={this.state.email}
                                 onChange={this.update('email')}
-                                className="login-input"
-                            />
-                        </label>}
+                                className="login-email"
+                                placeholder="email"
+                        />
+                        </label>
+
+                            <div className="grey-border">
+                                <div></div>
+                            </div>
+                </>)
+                }
+
+
+                <label>
+                    <input type="password"
+                        value={this.state.password}
+                            onChange={this.update('password')}
+                            className="login-password"
+                            placeholder="password"
+                    />
+                </label>
                         
-                        <br />
-                        <input className="session-submit" type="submit" value={this.props.formType} />
-                    </div>
-                </form>
+                
+                        
+            {this.props.errors.length < 1 ? (null) : <div className="errors">{this.renderErrors()}</div> }
+                        
+                        
+                    <input className="session-submit" type="submit" value={this.props.formType} />
+            </div>
+            </form>
             </div>
         );
     }
