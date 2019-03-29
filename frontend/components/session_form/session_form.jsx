@@ -8,12 +8,16 @@ class SessionForm extends React.Component {
             username: '',
             password: '',
             email: '',
-          
+            
             
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-
+    
+    componentWillUnmount(){
+        this.props.clearSessionErrors();    
+    }
+    
     update(field) {
         return e => this.setState({
             [field]: e.currentTarget.value
@@ -46,6 +50,7 @@ class SessionForm extends React.Component {
     }
 
     render() {
+        
 
         
     return (
@@ -70,7 +75,7 @@ class SessionForm extends React.Component {
                 </div>
 
 
-                {this.props.formType == 'login' ? (null) : (
+                {this.props.formType == 'Log In' ? (null) : (
                     <>
                         
                         <label>

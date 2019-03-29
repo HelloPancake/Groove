@@ -1,0 +1,106 @@
+@-webkit-keyframes fadein {
+  0% { opacity: 0; 
+    margin-top: 40px;}
+  50% { opacity: 0.5; 
+    margin-top: 20px;}
+  100% { opacity: 1;
+    margin-top: 0px; }
+}
+
+@keyframes fadein {
+  0% { opacity: 0;
+    margin-top: 40px; }
+  50% { opacity: 0.5;
+    margin-top: 20px; }
+
+  100%{ opacity: 1;
+margin-top: 0px; }
+}
+
+.Index-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding-top: 100px;
+    -webkit-animation: fadein 1.1s linear forwards;
+    animation: fadein 1.1s linear forwards;
+}
+
+form {
+    width: 340px;
+}
+
+.title-index-head {
+    color: white;
+    text-align: center;
+    font-size: 65pt;
+    /* font-family: 'PT Serif', serif; font-weight: 400; */
+    font-family: "Bookman Old Style", sans-serif; font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.title-text-underhead {
+    color: white;
+    text-align: center;
+    font-size: 15pt;
+    /* font-family: 'PT Serif', serif; font-weight: 400; */
+    font-family: Helvetica; 
+    font-weight: 200;
+    margin-bottom: 20px;
+    
+}
+
+.Index-box {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background: transparent;
+    border-radius: 3px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.Index-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px; 
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+     font-size: 12pt;
+   
+}
+
+.Index-login {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+    background-color:white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px; 
+    border-radius: 5px;
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    font-size: 12pt;
+
+}
+
+
+
+
