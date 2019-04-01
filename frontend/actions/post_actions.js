@@ -1,4 +1,4 @@
-import * as APIUtil from '../util/session_api_util'
+import * as APIUtil from '../util/posts_api_util';
 
 
 export const RECEIVE_ALL_POSTS = 'RECEIVE_ALL_POSTS';
