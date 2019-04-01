@@ -3,11 +3,13 @@ import { combineReducers } from 'redux';
 import errorsReducer from './errors_reducer';
 import entitiesReducer from './entities_reducer';
 import sessionsReducer from './session_reducer';
+import postsReducer from './posts_reducer';
 
 const rootReducer = combineReducers({
     errors: errorsReducer,
     entities: entitiesReducer,
-    session: sessionsReducer
+    session: sessionsReducer,
+    posts: postsReducer
 });
 
 export default rootReducer;

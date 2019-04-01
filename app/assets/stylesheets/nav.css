@@ -61,8 +61,8 @@ nav {
 
 .logo:hover {
     animation-name: changeColor;
-    animation-iteration-count: infinite;
     animation-duration: .75s;
+    animation-iteration-count: infinite;
     background-color: transparent;
     color: #fff;
     

@@ -1,0 +1,301 @@
+@keyframes lift {
+    0% {
+        position: relative;
+        bottom: 0vh;
+    }
+    /* 25% {
+        position: relative;
+        bottom: .1vh;
+    }
+    50% {
+        position: relative;
+        bottom: .2vh;
+    }
+    75% {
+        
+    } */
+    100% {
+        position: relative;
+        bottom: .5vh;
+    }
+}
+
+.TextIcon:hover {
+    animation-name: lift;
+    animation-duration: .2s;
+    /* animation-timing-function:linear; */
+    animation-fill-mode:forwards, none
+    
+}
+.QuoteIcon:hover {
+    animation-name: lift;
+    animation-duration: .2s;
+    /* animation-timing-function:linear; */
+    animation-fill-mode:forwards, none
+    
+}
+.PhotoIcon:hover {
+    animation-name: lift;
+    animation-duration: .2s;
+    /* animation-timing-function:linear; */
+    animation-fill-mode:forwards, none
+    
+}
+.VideoIcon:hover {
+    animation-name: lift;
+    animation-duration: .2s;
+    /* animation-timing-function:linear; */
+    animation-fill-mode:forwards, none
+    
+}
+.LinkIcon:hover {
+    animation-name: lift;
+    animation-duration: .2s;
+    /* animation-timing-function:linear; */
+    animation-fill-mode:forwards, none
+    
+}
+.VideoIcon:hover {
+    animation-name: lift;
+    animation-duration: .2s;
+    /* animation-timing-function:linear; */
+    animation-fill-mode:forwards, none
+    
+}
+.AudioIcon:hover {
+    animation-name: lift;
+    animation-duration: .2s;
+    /* animation-timing-function:linear; */
+    animation-fill-mode:forwards, none
+    
+}
+
+.postForm {
+    display: flex;
+    flex-direction: row;
+    width: 65vh;
+    color: green;
+    margin-left: 37vh;
+    background-color: transparent;
+    height: 11.8vh;
+    margin-top: 3vh;
+
+}
+
+.formButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 3.8vh;
+    padding-right: 3.8vh;
+    border-radius: .5vh;
+    width: 100%;
+}
+
+.buttonText {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.TextText {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 12pt;
+    color: gray;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.TextIcon {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28.5pt;
+    font-weight: 500;
+    color: black;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.buttonPhoto {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.PhotoText {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 12pt;
+    color: gray;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0.7vh;
+}
+
+.PhotoIcon {
+    color: rgb(255, 52, 52);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.buttonQuote {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.QuoteText {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 12pt;
+    color: gray;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0.7vh;
+}
+
+.QuoteIcon {
+    color: rgb(252, 148, 51);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.buttonLink {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.LinkText {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 12pt;
+    color: gray;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0.7vh;
+}
+
+.LinkIcon {
+    color: rgb(96, 247, 37);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.buttonAudio {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.AudioText {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 12pt;
+    color: gray;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0.7vh;
+}
+
+.AudioIcon {
+    color: rgb(163, 49, 240);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.buttonVideo {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.VideoText {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 12pt;
+    color: gray;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    top: 0.7vh;
+}
+
+.VideoIcon {
+    color: rgb(255, 35, 90);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.grey-vert {
+    height: 1px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    transform: rotate(90deg);
+}
+
+.grey-vert div {
+    height: 1px;
+    width: 100%; 
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+/* .line{
+width: 100%;
+padding-top: 10px;
+height: 47px;
+border-bottom: 1px solid black;
+position: absolute;
+top: 117px;
+} */

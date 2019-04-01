@@ -17,7 +17,7 @@
 margin-top: 0px; }
 }
 
-.Index-container {
+.Home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@ form {
     width: 340px;
 }
 
-.title-index-head {
+.title-home-head {
     color: white;
     text-align: center;
     font-size: 65pt;
@@ -52,7 +52,7 @@ form {
     
 }
 
-.Index-box {
+.Home-box {
      display: flex;
      justify-content: center;
      align-items: center;
@@ -63,7 +63,7 @@ form {
     width: 100%;
 }
 
-.Index-signup {
+.Home-signup {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +82,7 @@ form {
    
 }
 
-.Index-login {
+.Home-login {
     display: flex;
      justify-content: center;
      align-items: center;
