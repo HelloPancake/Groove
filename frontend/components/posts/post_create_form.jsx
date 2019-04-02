@@ -35,7 +35,7 @@ class PostCreateForm extends React.Component {
                     }} backgroundColor="transparent"/>
     
                     <form onSubmit={this.handleSubmit} className="createForm">
-                        <div>{this.props.currentUser}</div>
+                        {/* <div>{this.props.currentUser}</div> */}
                         <input placeholder="Title" className="createTitle" type="text" value={this.state.title}  onChange={this.update("title")} />
                         <textarea placeholder="Body" className="createBody" type="text" value={this.state.body} onChange={this.update("body")}></textarea>
                         <input className="postButton" type="submit" value="Post" />

@@ -2,7 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import DashboardContainer from '../dashboard/dashboard_container';
 import HomeContainer from '../home/home_container';
+
 import { Route } from 'react-router-dom';
+import {withRouter} from 'react-router-dom';
 
 function Main({ currentUser }) {
     if (currentUser) {
@@ -18,4 +20,4 @@ const msp = state => {
     }
 }
 
-export default connect(msp, null)(Main);
+export default withRouter(connect(msp, null)(Main));

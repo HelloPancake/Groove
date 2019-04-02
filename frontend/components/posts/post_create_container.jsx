@@ -4,12 +4,12 @@ import { createPost } from '../../actions/post_actions'
 import PostCreateForm from './post_create_form';
 import {withRouter} from 'react-router-dom'
 
-const mapStateToProps = ({currentUser}) => {
+const mapStateToProps = (state) => {
     // let userId = state.entities.users.id
     // let user = state.users[userId]
     return ({
         post: {title: "", body: ""},
-        currentUser: currentUser
+        // currentUser: 
     })
 }
 const mapDispatchToProps = (dispatch) => {

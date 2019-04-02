@@ -1,0 +1,12 @@
+
+.PostIndexContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    width: 65vh;
+    margin-left: 32vh;
+    margin-top: 2vh;
+    
+}
