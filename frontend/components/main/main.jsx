@@ -12,6 +12,7 @@ function Main({ currentUser }) {
         return (
         <>
             <DashboardContainer />
+            <PostIndexContainer />
 
         </>)
     } else {

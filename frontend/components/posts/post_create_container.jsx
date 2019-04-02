@@ -7,14 +7,16 @@ import {withRouter} from 'react-router-dom'
 const mapStateToProps = (state) => {
     // let userId = state.entities.users.id
     // let user = state.users[userId]
+    
     return ({
         post: {title: "", body: ""},
-        // currentUser: 
+        currentUser: state.entities.users[state.session.id]
     })
 }
 const mapDispatchToProps = (dispatch) => {
     return ({
         createPost: (post) => dispatch(createPost(post))
+
     })
 }
 
