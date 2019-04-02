@@ -3,17 +3,7 @@
         position: relative;
         bottom: 0vh;
     }
-    /* 25% {
-        position: relative;
-        bottom: .1vh;
-    }
-    50% {
-        position: relative;
-        bottom: .2vh;
-    }
-    75% {
-        
-    } */
+   
     100% {
         position: relative;
         bottom: .5vh;
@@ -75,7 +65,7 @@
     flex-direction: row;
     width: 65vh;
     color: green;
-    margin-left: 37vh;
+    margin-left: 32vh;
     background-color: transparent;
     height: 11.8vh;
     margin-top: 3vh;

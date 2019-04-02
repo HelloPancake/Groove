@@ -17,6 +17,20 @@
 margin-top: 0px; }
 }
 
+.homebackground {
+      background-image: image-url('AdobeStock_223722948.jpeg');
+       background-position: center;
+       background-size: cover;
+       height: 100vh;
+       position: fixed;
+       top: 0;
+       right: 0;
+       left: 0;
+       bottom: 0;
+       z-index: -1;
+}
+
+
 .login-form-container {
     display: flex;
     justify-content: center;
@@ -32,7 +46,6 @@ margin-top: 0px; }
     color: white;
     text-align: center;
     font-size: 65pt;
-    /* font-family: 'PT Serif', serif; font-weight: 400; */
     font-family: "Bookman Old Style", sans-serif; font-weight: 500;
     margin-bottom: 24px;
     

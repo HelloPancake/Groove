@@ -8,7 +8,9 @@ class Home extends React.Component {
     render() {
         
         return(
-            <div className="Home-container">
+            <div className="Home-container-back">
+                <div className="homebackground"></div>
+                <div className="Home-container">
                 <form>
                 <div className="title-home-head">groove</div>
                 <div className="title-text-underhead"> We like to disco </div>
@@ -18,6 +20,7 @@ class Home extends React.Component {
                 <Link to="/login" className="Home-login">Log In</Link>
                 </div>
                 </form>
+                </div>
             </div>
         )
     }

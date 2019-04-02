@@ -3,15 +3,20 @@ import { Link } from 'react-router-dom';
 
 
 
-const Greeting = ({ currentUser, logOut, location }) => {
+
+const Greeting = ({ currentUser, logOut, location, history }) => {
+    const handleLogOut = () => {
+        logOut();
+        history.push("/");
+    }
     const sessionLinks = () => (
         <Link to="/signup" className="login-signup">Sign up</Link>
     );
-    const personalGreeting = () => (
+    const personalGreeting = () => ((
         <div className="header-group">
-            <button className="header-button" onClick={logOut}>Log Out</button>
+            <button className="header-button" onClick={handleLogOut}>Log Out</button>
         </div>
-    );
+    ));
     const signupLinks = () => (
         <Link to="/login" className="login-signup">Log in</Link>
     )

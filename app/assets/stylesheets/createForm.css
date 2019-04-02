@@ -1,0 +1,53 @@
+.createForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.3vh;
+    margin-left: 32vh;
+    /* margin-bottom: 10vh; */
+    height: 35vh;
+    width:65vh;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 11.7vh;
+    
+    z-index: 1;
+
+    /* align-items: center; */
+}
+
+.createTitle {
+    width: 90%;
+    position: relative;
+    padding-top: 6vh;
+    font-size: 26pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.createBody {
+    width: 90%;
+    position: relative;
+    font-size: 14pt;
+    padding-left: 0.35vh;
+    padding-top: 2vh;
+    height: 15vh;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* padding-left: 3vh; */
+}
+
+.postButton {
+    display:flex;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
+    padding-left: 1.7vh;
+    padding-right: 1.8vh;
+    background-color: rgb(94, 176, 243);
+    color: white;
+    margin-left: 52vh;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    text-align: center;
+}

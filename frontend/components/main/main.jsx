@@ -1,0 +1,21 @@
+import React from 'react';
+import { connect } from 'react-redux';
+import DashboardContainer from '../dashboard/dashboard_container';
+import HomeContainer from '../home/home_container';
+import { Route } from 'react-router-dom';
+
+function Main({ currentUser }) {
+    if (currentUser) {
+        return (<DashboardContainer />);
+    } else {
+        return (<Route exact path="/" component={HomeContainer} />);
+    }
+}
+
+const msp = state => {
+    return {
+        currentUser: state.session.id
+    }
+}
+
+export default connect(msp, null)(Main);

@@ -1,15 +1,16 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const PostForm = () => {
 
 
     return(
         <div className="formButtons">
-            <i className="buttonText">      
+            <Link to="/new/text" className="buttonText">      
                 <div className="TextIcon">Aa</div>
                 <div className="TextText">Text</div>
-            </i>
+            </Link>
             <div className="grey-vert">
                 <div></div>
             </div>

@@ -2,16 +2,20 @@ import { connect } from 'react-redux';
 import React from 'react';
 import { createPost } from '../../actions/post_actions'
 import PostCreateForm from './post_create_form';
+import {withRouter} from 'react-router-dom'
 
-const mapStateToProps = (state) => {
+const mapStateToProps = ({currentUser}) => {
+    // let userId = state.entities.users.id
+    // let user = state.users[userId]
     return ({
-        post: {body:'', title: '' }
+        post: {title: "", body: ""},
+        currentUser: currentUser
     })
 }
 const mapDispatchToProps = (dispatch) => {
     return ({
-
+        createPost: (post) => dispatch(createPost(post))
     })
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PostCreateForm);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(PostCreateForm));
