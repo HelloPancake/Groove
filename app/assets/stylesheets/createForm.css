@@ -4,15 +4,13 @@
     background-color: white;
     border-radius: 0.3vh;
     margin-left: 32vh;
-    /* margin-bottom: 10vh; */
     height: 35vh;
     width:65vh;
     align-content: center;
     align-items: center;
     position: relative;
-    bottom: 11.7vh;
-    
-    z-index: 1;
+    /* bottom: 9vh; */
+    z-index: 2;
 
     /* align-items: center; */
 }

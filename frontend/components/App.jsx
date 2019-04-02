@@ -18,10 +18,10 @@ const App = () => (
         </header>
         
         <Route path="/" component={Main} />
+        {/* <ProtectedRoute path="/new/text" component={PostCreateContainer} /> */}
         <Route path="/" component={MainPostFeed} />
         <AuthRoute path="/login" component={LogInFormContainer} />
         <AuthRoute path="/signup" component={SignUpFormContainer} />
-        <ProtectedRoute path="/new/text" component={PostCreateContainer} />
     </div>
 );
 

@@ -15,10 +15,11 @@ class PostIndex extends React.Component {
                 <PostIndexItem
                     key={`${post.id}`}
                     post={post}
+                    
                     // deletePost={this.props.deletePost}
                 />
             )
-        })
+        }).reverse()
 
         return (
             <div className="PostIndexContainer">
