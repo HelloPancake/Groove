@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Modal from '../modal/modal';
 
-class PostCreateForm extends React.Component {
+class ImageCreateForm extends React.Component {
     constructor(props) {
         super(props);
 
@@ -20,39 +20,39 @@ class PostCreateForm extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.createPost(this.state);
-        this.props.history.push("/");
-        // .then(() => {this.setState({
-        //     title: '',
-        //     body: ''
-        // })})
+        this.props.createPost(this.state).then(() => {
+            this.setState({
+                title: '',
+                body: ''
+            })
+        })
     }
 
     render() {
 
-        if(this.state.show) {
-            
+        if (this.state.show) {
+
             return (
                 <div className="ModalTextForm">
                     <Modal clickListener={() => {
-                        this.setState({show: false});
+                        this.setState({ show: false });
                         this.props.history.push("/dashboard")
-                    }} backgroundColor="transparent"/>
-    
+                    }} backgroundColor="transparent" />
+
                     <form onSubmit={this.handleSubmit} className="createForm">
                         <div>{this.props.currentUser.username}</div>
-                        <input placeholder="Title" className="createTitle" type="text" value={this.state.title}  onChange={this.update("title")} />
+                        <input placeholder="Title" className="createTitle" type="text" value={this.state.title} onChange={this.update("title")} />
                         <textarea placeholder="Body" className="createBody" type="text" value={this.state.body} onChange={this.update("body")}></textarea>
                         <input className="postButton" type="submit" value="Post" />
                     </form>
-                    
+
                 </div>
             );
         }
-        else{
+        else {
             return null
         }
     }
 }
 
-export default PostCreateForm;
+export default ImageCreateForm;

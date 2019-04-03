@@ -11,14 +11,17 @@ const PostForm = () => {
                 <div className="TextIcon">Aa</div>
                 <div className="TextText">Text</div>
             </Link>
+
             <div className="grey-vert">
                 <div></div>
             </div>
 
-            <i className="buttonPhoto">
+         <div className="buttonPhoto">
+            <Link to="/new/photo">
                 <div className="PhotoIcon"><i className="fas fa-camera-retro fa-2x"></i></div>
                 <div className="PhotoText">Photo</div>
-            </i>
+            </Link>
+        </div>
 
             
             <div className="grey-vert">
