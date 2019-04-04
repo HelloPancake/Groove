@@ -6,7 +6,8 @@ import PostIndex from './post_index';
 const mapStateToProps = (state) => {
     let posts = Object.values(state.posts)
     return({
-        posts: posts
+        posts: posts,
+        users: state.entities.users
     })
 }
 const mapDispatchToProps = (dispatch) => {

@@ -7,16 +7,20 @@ import { Link } from 'react-router-dom';
 
 const NavBar = (props) => {
     return(
-        <nav>
-            <div>
-                <Link to="/" className="logo">g</Link>
-            </div>
-            
-            {/* <Route path="/login" component={GreetingContainer}/> */}
-            {/* <Route path="/" component={GreetingContainer}/> */}
-            <GreetingContainer />
+        <div className="parentDiv">
+            <nav className="bar">
+                <div>
+                    <Link to="/" className="logo">g</Link>
+                </div>
+                
+                {/* <Route path="/login" component={GreetingContainer}/> */}
+                {/* <Route path="/" component={GreetingContainer}/> */}
+                <GreetingContainer />
 
-        </nav>
+            </nav>
+                <br/>
+            <nav className="dummyNav"></nav>
+        </div>
     )
 }
 

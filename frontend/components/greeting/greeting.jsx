@@ -10,11 +10,15 @@ const Greeting = ({ currentUser, logOut, location, history }) => {
         history.push("/");
     }
     const SignUp = () => (
+        
         <Link to="/signup" className="login-signup">Sign up</Link>
+        
+        
     );
     const LogOut = () => ((
         <div className="header-group">
-            <button className="header-button" onClick={handleLogOut}>Log Out</button>
+            <Link className="house" to="/"><i className="fas fa-home fa-2x"></i></Link>
+            <button className="logout" onClick={handleLogOut}>Log Out</button>
         </div>
     ));
     const LogIn = () => (

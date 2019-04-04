@@ -4,13 +4,35 @@
     background-color: white;
     border-radius: 0.3vh;
     margin-left: 32vh;
-    height: 35vh;
+    /* height: 35vh; */
+    height: fit-content;
+    width:65vh;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* bottom: 9vh; */
+    z-index: 2;
+    margin-top: 3vh;
+
+    /* align-items: center; */
+}
+
+.createQuoteForm {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.3vh;
+    margin-left: 32vh;
+    /* height: 35vh; */
+    height: fit-content;
     width:65vh;
     align-content: center;
     align-items: center;
     position: relative;
     /* bottom: 9vh; */
     z-index: 2;
+    margin-top: 3vh;
 
     /* align-items: center; */
 }
@@ -18,18 +40,18 @@
 .createTitle {
     width: 90%;
     position: relative;
-    padding-top: 3vh;
-    font-size: 26pt;
+    padding-top: 2.5vh;
+    font-size: 28pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .createBody {
     width: 90%;
     position: relative;
     font-size: 14pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 0.35vh;
     padding-top: 2vh;
     height: 15vh;
-     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /* padding-left: 3vh; */
 }
 
@@ -41,13 +63,14 @@
     padding-top: 1.4vh;
     padding-bottom: 1.4vh;
     padding-left: 1.7vh;
-    padding-right: 1.8vh;
+    padding-right: 1.9vh;
     background-color: rgb(94, 176, 243);
     color: white;
     margin-left: 52vh;
     margin-bottom: 2vh;
     margin-top: 2vh;
     text-align: center;
+    border-radius: .4vh;
 }
 
 .postUser {
@@ -58,7 +81,82 @@
 }
 
 .preview {
-    max-height:30vh;
+    max-width: 60.5vh;
     width: auto;
+    border-radius: .4vh
 }
 
+.uploadFileButton {
+    display:flex;
+    align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
+    padding-left: 1.7vh;
+    padding-right: 1.7vh;
+    background-color: rgb(94, 176, 243);
+    color: white;
+    border-radius: .4vh;
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+    text-align: center;
+}
+
+.QuoteFeed {
+    font-size: 26pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    word-wrap: break-word;
+}
+
+.QuoteSourceFeed {
+    font-size: 17pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: grey;
+    padding-left: 40vh;
+    word-wrap: break-word;
+}
+
+.createQuote {
+    width: 90%;
+    position: relative;
+    padding-top: 2vh;
+    font-size: 26pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.createSource {
+    width: 100%;
+    position: relative;
+    font-size: 14pt;
+    padding-left: 36vh;
+    padding-top: 2vh;
+    height: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.indexAudio {
+    width: 100%;
+    
+}
+
+.indexVideo {
+    width: 100%;
+    border-radius: .4vh;
+}
+
+
+.indexTitle {
+    
+    font-size: 28pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.indexBody {
+    padding-top: 2.5vh;
+    font-size: 14pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: grey;
+}

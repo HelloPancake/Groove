@@ -7,8 +7,8 @@
     background-color: transparent;
     width: 65vh;
     margin-left: 32vh;
-    /* margin-top: 2vh; */
     z-index: 0;
+    position: relative;
     
 }
 
@@ -26,5 +26,9 @@
     padding-right: 2vh;
     text-align: left;
     word-wrap: break-word;
+    position: relative;
 }
 
+.IndexItemUser {
+    margin-bottom: 2vh;
+}

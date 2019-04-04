@@ -11,6 +11,7 @@ function Main({ currentUser }) {
     if (currentUser) {
         return (
         <>
+            <div className="solidDiv"></div>
             <DashboardContainer />
             <PostIndexContainer />
 

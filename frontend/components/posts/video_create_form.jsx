@@ -52,7 +52,7 @@ class VideoCreateForm extends React.Component {
 
     render() {
         console.log(this.state);
-        const preview = this.state.mediaUrl ? <img src={this.state.mediaUrl} className="preview" /> : null;
+        const preview = this.state.mediaUrl ? <video controls className="preview"><source src={this.state.mediaUrl} className="preview" /></video> : null;
         if (this.state.show) {
 
             return (
@@ -60,14 +60,14 @@ class VideoCreateForm extends React.Component {
                     <Modal clickListener={() => {
                         this.setState({ show: false });
                         this.props.history.push("/dashboard")
-                    }} backgroundColor="transparent" />
+                    }} backgroundColor="rgba(0, 0, 0, 0.6)" />
 
                     <form onSubmit={this.handleSubmit} className="createForm">
                         <div className="postUser">{this.props.currentUser.username}</div>
                         {/* <input placeholder="Title" className="createTitle" type="text" value={this.state.title} onChange={this.update("title")} /> */}
-                        <input type="file" onChange={this.handleFile} />
+                        <input className="uploadFileButton" type="file" onChange={this.handleFile} />
                         {preview}
-                        <input placeholder="Body" className="createBody" type="text" value={this.state.body} onChange={this.update("body")} />
+                        <textarea placeholder="Body" className="createBody" type="text" value={this.state.body} onChange={this.update("body")}></textarea>
                         <input className="postButton" type="submit" value="Post" />
                     </form>
 

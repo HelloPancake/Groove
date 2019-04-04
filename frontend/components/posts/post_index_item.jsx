@@ -6,13 +6,15 @@ const PostIndexItem = (props) => {
     if (props.post.post_type == "quote"){
         post = (
             <div className="PostIndexItem">
-                <div>"{props.post.title}"</div>  
-                <div>{props.post.body}</div>  
+                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <div className="QuoteFeed">"{props.post.title}"</div>  
+                <div className="QuoteSourceFeed">-{props.post.body}</div>  
             </div>
             )}
     else if (props.post.post_type == "image"){
         post = (
             <div className="PostIndexItem">
+                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
                 <img src={props.post.media}/>
                 <div>{props.post.body}</div>  
             </div>
@@ -20,28 +22,33 @@ const PostIndexItem = (props) => {
     else if (props.post.post_type == "post"){
         post = (
             <div className="PostIndexItem">
-                <div>{props.post.title}</div>
-                <div>{props.post.body}</div>
+                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <div className="indexTitle">{props.post.title}</div>
+                <div className="indexBody">{props.post.body}</div>
             </div>
         )}
     else if (props.post.post_type == "link"){
         post = (
             <div className="PostIndexItem">
-                <a href={props.post.title}>{props.post.title}</a>
+                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <a href={`https://${props.post.title}`} rel="external">{props.post.title}</a>
             </div>
         )}
     else if (props.post.post_type == "audio"){
         post = (
             <div className="PostIndexItem">
-                <audio controls>
+                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <audio controls className="indexAudio">
                     <source src={props.post.media} />
                 </audio>
+                <div className="indexBody">{props.post.body}</div>
             </div>
         )}
     else if (props.post.post_type == "video"){
         post = (
             <div className="PostIndexItem">
-                <video controls>
+                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <video controls loop className="indexVideo"  >
                     <source src={props.post.media} />
                 </video>
             </div>

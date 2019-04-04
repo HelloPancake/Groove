@@ -84,6 +84,7 @@
     padding-right: 3.8vh;
     border-radius: .5vh;
     width: 100%;
+    z-index: 1;
 }
 
 .buttonText {

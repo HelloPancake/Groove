@@ -41,7 +41,7 @@ class PostCreateForm extends React.Component {
                     <Modal clickListener={() => {
                         this.setState({show: false});
                         this.props.history.push("/dashboard")
-                    }} backgroundColor="transparent"/>
+                    }} backgroundColor="rgba(0, 0, 0, 0.6)"/>
     
                     <form onSubmit={this.handleSubmit} className="createForm">
                         <div className="postUser">{this.props.currentUser.username}</div>

@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import React from 'react';
 import { createImagePost } from '../../actions/post_actions'
 import ImageCreateForm from './image_create_form';
 import { withRouter } from 'react-router-dom'
