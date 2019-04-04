@@ -13,50 +13,43 @@
 .TextIcon:hover {
     animation-name: lift;
     animation-duration: .2s;
-    /* animation-timing-function:linear; */
-    animation-fill-mode:forwards, none
+    animation-fill-mode:forwards, none;
     
 }
 .QuoteIcon:hover {
     animation-name: lift;
     animation-duration: .2s;
-    /* animation-timing-function:linear; */
-    animation-fill-mode:forwards, none
+    animation-fill-mode:forwards, none;
     
 }
 .PhotoIcon:hover {
     animation-name: lift;
     animation-duration: .2s;
-    /* animation-timing-function:linear; */
-    animation-fill-mode:forwards, none
+    animation-fill-mode:forwards, none;
     
 }
 .VideoIcon:hover {
     animation-name: lift;
     animation-duration: .2s;
-    /* animation-timing-function:linear; */
-    animation-fill-mode:forwards, none
+    animation-fill-mode:forwards, none;
     
 }
 .LinkIcon:hover {
     animation-name: lift;
     animation-duration: .2s;
-    /* animation-timing-function:linear; */
-    animation-fill-mode:forwards, none
+    animation-fill-mode:forwards, none;
     
 }
 .VideoIcon:hover {
     animation-name: lift;
     animation-duration: .2s;
-    /* animation-timing-function:linear; */
-    animation-fill-mode:forwards, none
+    animation-fill-mode:forwards, none;
     
 }
 .AudioIcon:hover {
     animation-name: lift;
     animation-duration: .2s;
-    /* animation-timing-function:linear; */
-    animation-fill-mode:forwards, none
+    animation-fill-mode:forwards, none;
     
 }
 
@@ -282,11 +275,3 @@
     background-color: lightgray;
 }
 
-/* .line{
-width: 100%;
-padding-top: 10px;
-height: 47px;
-border-bottom: 1px solid black;
-position: absolute;
-top: 117px;
-} */

@@ -36,7 +36,6 @@ form {
     color: white;
     text-align: center;
     font-size: 65pt;
-    /* font-family: 'PT Serif', serif; font-weight: 400; */
     font-family: "Bookman Old Style", sans-serif; font-weight: 500;
     margin-bottom: 5px;
 }
@@ -45,7 +44,6 @@ form {
     color: white;
     text-align: center;
     font-size: 15pt;
-    /* font-family: 'PT Serif', serif; font-weight: 400; */
     font-family: Helvetica; 
     font-weight: 200;
     margin-bottom: 20px;

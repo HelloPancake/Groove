@@ -4,18 +4,15 @@
     background-color: white;
     border-radius: 0.3vh;
     margin-left: 32vh;
-    /* height: 35vh; */
     height: fit-content;
     width:65vh;
     align-content: center;
     justify-content: center;
     align-items: center;
     position: relative;
-    /* bottom: 9vh; */
     z-index: 2;
     margin-top: 3vh;
 
-    /* align-items: center; */
 }
 
 .createQuoteForm {
@@ -24,17 +21,14 @@
     background-color: white;
     border-radius: 0.3vh;
     margin-left: 32vh;
-    /* height: 35vh; */
     height: fit-content;
     width:65vh;
     align-content: center;
     align-items: center;
     position: relative;
-    /* bottom: 9vh; */
     z-index: 2;
     margin-top: 3vh;
 
-    /* align-items: center; */
 }
 
 .createTitle {
@@ -52,7 +46,6 @@
     padding-left: 0.35vh;
     padding-top: 2vh;
     height: 15vh;
-    /* padding-left: 3vh; */
 }
 
 .postButton {
