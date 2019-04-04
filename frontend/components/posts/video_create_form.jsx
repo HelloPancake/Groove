@@ -2,14 +2,14 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Modal from '../modal/modal';
 
-class ImageCreateForm extends React.Component {
+class VideoCreateForm extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             title: "",
             body: "",
-            post_type: "image",
+            post_type: "video",
             mediaFile: null,
             mediaUrl: null
         };
@@ -29,7 +29,6 @@ class ImageCreateForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const formData = new FormData();
-        formData.append('post[title]', this.state.title);
         formData.append('post[body]', this.state.body);
         formData.append('post[media]', this.state.mediaFile);
         formData.append('post[post_type]', this.state.post_type);
@@ -37,12 +36,12 @@ class ImageCreateForm extends React.Component {
         this.props.history.push("/dashboard");
     }
 
-    handleFile(e){
+    handleFile(e) {
         e.preventDefault();
         const file = e.currentTarget.files[0];
         const fileReader = new FileReader();
         fileReader.onloadend = () => {
-            this.setState({mediaFile: file, mediaUrl: fileReader.result});
+            this.setState({ mediaFile: file, mediaUrl: fileReader.result });
         };
 
         if (file) {
@@ -53,7 +52,7 @@ class ImageCreateForm extends React.Component {
 
     render() {
         console.log(this.state);
-        const preview = this.state.mediaUrl ? <img src={this.state.mediaUrl} className="preview"/> : null;
+        const preview = this.state.mediaUrl ? <img src={this.state.mediaUrl} className="preview" /> : null;
         if (this.state.show) {
 
             return (
@@ -65,10 +64,10 @@ class ImageCreateForm extends React.Component {
 
                     <form onSubmit={this.handleSubmit} className="createForm">
                         <div className="postUser">{this.props.currentUser.username}</div>
-                        <input placeholder="Title" className="createTitle" type="text" value={this.state.title} onChange={this.update("title")} />
-                        <input type="file" onChange={this.handleFile}/>
+                        {/* <input placeholder="Title" className="createTitle" type="text" value={this.state.title} onChange={this.update("title")} /> */}
+                        <input type="file" onChange={this.handleFile} />
                         {preview}
-                        <textarea placeholder="Body" className="createBody" type="text" value={this.state.body} onChange={this.update("body")}></textarea>
+                        <input placeholder="Body" className="createBody" type="text" value={this.state.body} onChange={this.update("body")} />
                         <input className="postButton" type="submit" value="Post" />
                     </form>
 
@@ -81,4 +80,4 @@ class ImageCreateForm extends React.Component {
     }
 }
 
-export default ImageCreateForm;
+export default VideoCreateForm;

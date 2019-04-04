@@ -9,25 +9,25 @@ const Greeting = ({ currentUser, logOut, location, history }) => {
         logOut();
         history.push("/");
     }
-    const sessionLinks = () => (
+    const SignUp = () => (
         <Link to="/signup" className="login-signup">Sign up</Link>
     );
-    const personalGreeting = () => ((
+    const LogOut = () => ((
         <div className="header-group">
             <button className="header-button" onClick={handleLogOut}>Log Out</button>
         </div>
     ));
-    const signupLinks = () => (
+    const LogIn = () => (
         <Link to="/login" className="login-signup">Log in</Link>
     )
     
     if (location.pathname === "/login") {
-        return (sessionLinks())
+        return (SignUp())
     }
     else if (currentUser) {
-        return (personalGreeting())
+        return (LogOut())
     } else if(location.pathname === "/signup"){
-        return (signupLinks())
+        return (LogIn())
     }
     else {
         return null;

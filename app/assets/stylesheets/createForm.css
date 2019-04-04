@@ -18,7 +18,7 @@
 .createTitle {
     width: 90%;
     position: relative;
-    padding-top: 6vh;
+    padding-top: 3vh;
     font-size: 26pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -49,3 +49,16 @@
     margin-top: 2vh;
     text-align: center;
 }
+
+.postUser {
+    width: 90%;
+    padding-top: 2vh;
+    font-size: 12pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.preview {
+    max-height:30vh;
+    width: auto;
+}
+

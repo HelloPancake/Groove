@@ -19,6 +19,11 @@ const removePost = (post) => ({
     postId: post.id
 })
 
+export const createImagePost = (post) => (dispatch) => {
+    return (
+        APIUtil.createImagePost(post).then(post => dispatch(receivePost(post)))
+    )
+}
 
 export const showAllPosts = () => (dispatch) => {
     return (

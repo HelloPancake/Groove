@@ -27,6 +27,19 @@ export const createPost = (post) => {
     )
 }
 
+export const createImagePost = (formData) => {
+    
+    return (
+        $.ajax({
+            method: "POST",
+            url: `/api/posts`,
+            data: formData,
+            contentType: false,
+            processData: false
+        })
+    )
+};
+
 export const editPost = (post) => {
     return (
         $.ajax({

@@ -1,14 +1,7 @@
-class Post < ApplicationRecord 
-    validates :title, :body, presence: true
+class Post < ApplicationRecord
+    has_one_attached :media
 
-    has_one_attached :photo
-
-    belongs_to :user,
-    primary_key: :id,
-    foreign_key: :user_id,
-    class_name: :User
-
-
+    belongs_to :user
 
 end
 

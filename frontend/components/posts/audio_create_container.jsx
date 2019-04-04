@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import React from 'react';
 import { createImagePost } from '../../actions/post_actions'
-import ImageCreateForm from './image_create_form';
+import AudioCreateForm from './audio_create_form';
 import { withRouter } from 'react-router-dom'
 
 const mapStateToProps = (state) => {
     return ({
         currentUser: state.entities.users[state.session.id],
-        
+
     })
 }
 const mapDispatchToProps = (dispatch) => {
@@ -17,4 +17,4 @@ const mapDispatchToProps = (dispatch) => {
     })
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(ImageCreateForm));
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AudioCreateForm));

@@ -36,6 +36,8 @@ class SessionForm extends React.Component {
 
     }
 
+   
+
     renderErrors() {
         
         return (
@@ -94,6 +96,8 @@ class SessionForm extends React.Component {
                             </div>
                 </>)
                 }
+                
+               
 
 
                 <label>

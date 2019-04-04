@@ -2,15 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Modal from '../modal/modal';
 
-class PostCreateForm extends React.Component {
+class QuoteCreateForm extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
             title: "",
             body: "",
-            post_type: "post"
+            post_type: "quote"
         };
+        // this.state = this.props.post;
         this.state.show = true;
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -26,37 +27,34 @@ class PostCreateForm extends React.Component {
         e.preventDefault();
         this.props.createPost(this.state);
         this.props.history.push("/");
-        // .then(() => {this.setState({
-        //     title: '',
-        //     body: ''
-        // })})
     }
 
-    render() {
 
-        if(this.state.show) {
-            
+    render() {
+        console.log(this.state);
+        if (this.state.show) {
+
             return (
                 <div className="ModalTextForm">
                     <Modal clickListener={() => {
-                        this.setState({show: false});
+                        this.setState({ show: false });
                         this.props.history.push("/dashboard")
-                    }} backgroundColor="transparent"/>
-    
+                    }} backgroundColor="transparent" />
+
                     <form onSubmit={this.handleSubmit} className="createForm">
-                        <div className="postUser">{this.props.currentUser.username}</div>
-                        <input placeholder="Title" className="createTitle" type="text" onChange={this.update("title")} />
-                        <textarea placeholder="Body" className="createBody" type="text" onChange={this.update("body")}></textarea>
+                        <div className="postUser"> {this.props.currentUser.username}</div>
+                        <input placeholder='"Quote"' className="createQuote" type="text"  onChange={this.update("title")} />
+                        <input placeholder="-Source" className="createSource" type="text" onChange={this.update("body")}/>
                         <input className="postButton" type="submit" value="Post" />
                     </form>
-                    
+
                 </div>
             );
         }
-        else{
+        else {
             return null
         }
     }
 }
 
-export default PostCreateForm;
+export default QuoteCreateForm;

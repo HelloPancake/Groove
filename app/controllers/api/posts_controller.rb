@@ -11,8 +11,15 @@ class Api::PostsController < ApplicationController
     end
 
     def create
+        
         @post = Post.new(post_params)
+
+        if params[:post][:media]
+            @post.media.attach(params[:post][:media])
+        end
+
         @post.user_id = current_user.id
+
 
         if @post.save!
             render :show
@@ -42,7 +49,7 @@ class Api::PostsController < ApplicationController
 
     private
         def post_params
-            params.require(:post).permit(:audio_url, :image_url, :user_id, :body, :title)
+            params.require(:post).permit(:audio_url, :image_url, :user_id, :body, :title, :post_type)
         end
 
 end
