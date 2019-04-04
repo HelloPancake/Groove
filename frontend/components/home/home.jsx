@@ -9,7 +9,7 @@ class Home extends React.Component {
         this.state = {
             username: "",
             password: ""
-        }
+        };
         this.handleDemoSubmit = this.handleDemoSubmit.bind(this);
     }
 

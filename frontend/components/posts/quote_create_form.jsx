@@ -11,7 +11,7 @@ class QuoteCreateForm extends React.Component {
             body: "",
             post_type: "quote"
         };
-        // this.state = this.props.post;
+        
         this.state.show = true;
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -38,7 +38,7 @@ class QuoteCreateForm extends React.Component {
                 <div className="ModalTextForm">
                     <Modal clickListener={() => {
                         this.setState({ show: false });
-                        this.props.history.push("/dashboard")
+                        this.props.history.push("/dashboard");
                     }} backgroundColor="rgba(0, 0, 0, 0.6)" />
 
                     <form onSubmit={this.handleSubmit} className="createQuoteForm">
@@ -52,7 +52,7 @@ class QuoteCreateForm extends React.Component {
             );
         }
         else {
-            return null
+            return null;
         }
     }
 }

@@ -47,7 +47,7 @@ class ImageCreateForm extends React.Component {
 
         if (file) {
             fileReader.readAsDataURL(file);
-        }
+        };
 
     }
 
@@ -75,8 +75,8 @@ class ImageCreateForm extends React.Component {
             );
         }
         else {
-            return null
-        }
+            return null;
+        };
     }
 }
 

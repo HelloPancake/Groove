@@ -20,7 +20,7 @@ class PostIndex extends React.Component {
                     // deletePost={this.props.deletePost}
                 />
             )
-        }).reverse()
+        }).reverse();
 
         return (
             <div className="PostIndexContainer">

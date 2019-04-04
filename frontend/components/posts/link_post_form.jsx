@@ -36,7 +36,7 @@ class LinkCreateForm extends React.Component {
                 <div className="ModalTextForm">
                     <Modal clickListener={() => {
                         this.setState({ show: false });
-                        this.props.history.push("/dashboard")
+                        this.props.history.push("/dashboard");
                     }} backgroundColor="rgba(0, 0, 0, 0.6)" />
 
                     <form onSubmit={this.handleSubmit} className="createForm">
@@ -49,8 +49,8 @@ class LinkCreateForm extends React.Component {
             );
         }
         else {
-            return null
-        }
+            return null;
+        };
     }
 }
 

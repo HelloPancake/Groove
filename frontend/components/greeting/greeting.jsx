@@ -35,7 +35,7 @@ const Greeting = ({ currentUser, logOut, location, history }) => {
     }
     else {
         return null;
-    }
+    };
 };
 
 
