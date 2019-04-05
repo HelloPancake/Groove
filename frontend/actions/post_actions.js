@@ -6,13 +6,15 @@ export const RECEIVE_POST = 'RECEIVE_POST';
 export const REMOVE_POST = 'REMOVE_POST';
 
 
-const receiveAllPosts = (posts) => ({
+const receiveAllPosts = (payload) => ({
     type: RECEIVE_ALL_POSTS,
-    posts: posts
+    posts: payload.posts,
+    users: payload.users
 })
-const receivePost = (post) => ({
+const receivePost = (payload) => ({
     type: RECEIVE_POST,
-    post: post
+    post: payload.post,
+    user: payload.user
 })
 const removePost = (post) => ({
     type: REMOVE_POST,

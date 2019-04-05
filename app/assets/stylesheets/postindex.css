@@ -35,4 +35,10 @@
 
 .ImagePost {
     border-radius: .5vh;
+   
+}
+
+.actualLink {
+    text-decoration: underline;
+    
 }
