@@ -20,7 +20,7 @@
     margin-top: 2vh;
     z-index: 0;
     width: 65vh;
-    border-radius: .4vh;
+    border-radius: .5vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -30,5 +30,9 @@
 }
 
 .IndexItemUser {
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
+}
+
+.ImagePost {
+    border-radius: .5vh;
 }

@@ -9,6 +9,7 @@ const mapStateToProps = (state) => {
         posts: posts,
         users: state.entities.users
     })
+    
 }
 const mapDispatchToProps = (dispatch) => {
     return({

@@ -15,7 +15,7 @@ const PostIndexItem = (props) => {
         post = (
             <div className="PostIndexItem">
                 <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
-                <img src={props.post.media}/>
+                <img className="ImagePost" src={props.post.media}/>
                 <div>{props.post.body}</div>  
             </div>
         )}
