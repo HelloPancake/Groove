@@ -49,11 +49,13 @@ nav {
     display: flex;
     background-color: transparent;
     color: white;
-    font-family: "Bookman Old Style", sans-serif; font-weight: 600;
-    font-size: 44pt;
+    /* font-family: "Bookman Old Style", sans-serif; font-weight: 600; */
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 800;
+    font-size: 40pt;
     margin-left: 3vh;
     position: relative;
-    bottom: 3.5vh;
+    bottom: 3vh;
     height: 100%;
 
 }
