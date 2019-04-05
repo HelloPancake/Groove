@@ -76,7 +76,7 @@
 .preview {
     max-width: 60.5vh;
     width: auto;
-    border-radius: .4vh
+    border-radius: .4vh;
 }
 
 .uploadFileButton {

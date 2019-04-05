@@ -31,7 +31,7 @@ const PostIndexItem = (props) => {
         post = (
             <div className="PostIndexItem">
                 <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
-                <a href={`https://${props.post.title}`} className="actualLink"rel="external">{props.post.title}</a>
+                <a href={`https://${props.post.title}`} className="actualLink" rel="external">{props.post.title}</a>
             </div>
         )}
     else if (props.post.post_type == "audio"){

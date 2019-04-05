@@ -48,10 +48,7 @@ input[type="submit"],
 textarea,
 button {
   box-sizing: border-box;
-  /*
-  Get rid of native styling. Read more here:
-  http://css-tricks.com/almanac/properties/a/appearance/
-  */
+  
   -webkit-appearance: none;
   -moz-appearance: none;
 }
