@@ -10,27 +10,27 @@ class User < ApplicationRecord
     has_many :posts,
     primary_key: :id,
     foreign_key: :user_id,
-    class_name: :Posts
+    class_name: :Post
 
     # has_many :notes,
     # primary_key: :id,
     # foreign_key: :user_id,
     # class_name: :Notes
 
-    # has_many :likes,
-    # primary_key: :id,
-    # foreign_key: :user_id,
-    # class_name: :Likes
+    has_many :likes,
+    primary_key: :id,
+    foreign_key: :user_id,
+    class_name: :Like
 
-    # has_many :followers,
-    # primary_key: :id,
-    # foreign_key: :follower_id,
-    # class_name: :Users
+    has_many :follows,
+    primary_key: :id,
+    foreign_key: :follower_id,
+    class_name: :Users
 
-    # has_many :followees,
-    # primary_key: :id,
-    # foreign_key: :followee_id,
-    # class_name: :Users
+    has_many :follows,
+    primary_key: :id,
+    foreign_key: :followee_id,
+    class_name: :Users
 
     def password=(password)
         @password = password

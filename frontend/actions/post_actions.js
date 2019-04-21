@@ -11,11 +11,14 @@ const receiveAllPosts = (payload) => ({
     posts: payload.posts,
     users: payload.users
 })
-const receivePost = (payload) => ({
+export const receivePost = (payload) => {
+    return ({
+    
     type: RECEIVE_POST,
     post: payload.post,
     user: payload.user
-})
+    })
+}
 const removePost = (post) => ({
     type: REMOVE_POST,
     postId: post.id

@@ -5,8 +5,6 @@ import PostCreateForm from './post_create_form';
 import {withRouter} from 'react-router-dom'
 
 const mapStateToProps = (state) => {
-    // let userId = state.entities.users.id
-    // let user = state.users[userId]
     
     return ({
         post: {title: "", body: ""},

@@ -3,6 +3,10 @@ import PostIndexItem from './post_index_item';
 
 
 class PostIndex extends React.Component {
+    constructor(props) {
+        super(props);
+
+    }
 
     componentDidMount() {
         this.props.showAllPosts();
@@ -18,6 +22,9 @@ class PostIndex extends React.Component {
                     key={`${post.id}`}
                     post={post}
                     users={this.props.users}
+                    createLike={this.props.createLike}
+                    removeLike={this.props.removeLike}
+                    currentUser={this.props.currentUser}
                     
                 />
             )

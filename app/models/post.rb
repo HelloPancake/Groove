@@ -3,5 +3,10 @@ class Post < ApplicationRecord
 
     belongs_to :user
 
+    has_many :likes,
+    primary_key: :id,
+    foreign_key: :post_id,
+    class_name: :Like
+
 end
 

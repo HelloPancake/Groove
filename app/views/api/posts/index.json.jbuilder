@@ -1,5 +1,4 @@
 
-
 @posts.each do |post|
     json.posts do
         json.set! post.id do 
@@ -7,10 +6,11 @@
         end
     end 
 
-    json.users do
+    json.users do 
         json.set! post.user.id do
-            json.partial! '/api/users/user', user: post.user
+            json.partial! '/api/users/user', user: post.user   
         end
+
     end
 
 end

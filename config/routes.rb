@@ -5,11 +5,13 @@ Rails.application.routes.draw do
     resources :users, only: [:show, :create]
     resource :session, only: [:create, :destroy]
     resources :posts, only: [:index, :show, :create, :update, :destroy]
-    # resources :notes, only: [:show, :create, :destroy, :update]
-    # resources :likes, only: [:create, :destroy]
-    # resources :follows, only: [:create, :destroy]
-  end
+    resources :likes, only: [:create]
+    resources :follows, only: [:create, :destroy]
+    delete 'likes/delete', to: 'likes#destroy'
 
+    # resources :notes, only: [:show, :create, :destroy, :update]
+    
+  end
 
 
   root "static_pages#root"
