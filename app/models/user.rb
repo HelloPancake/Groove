@@ -22,15 +22,15 @@ class User < ApplicationRecord
     foreign_key: :user_id,
     class_name: :Like
 
-    has_many :follows,
+    has_many :followers,
     primary_key: :id,
     foreign_key: :follower_id,
-    class_name: :Users
+    class_name: :Follow
 
-    has_many :follows,
+    has_many :followees,
     primary_key: :id,
     foreign_key: :followee_id,
-    class_name: :Users
+    class_name: :Follow
 
     def password=(password)
         @password = password

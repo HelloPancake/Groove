@@ -16,9 +16,17 @@ const PostIndexItem = (props) => {
                 <div className="QuoteFeed">"{props.post.title}"</div>  
                 <div className="QuoteSourceFeed">-{props.post.body}</div>  
                 {likesArr.includes(props.currentUser.id) ?
-                    <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    </div>
                     :
-                    <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    </div>
+                }
+                {likesArr.length == 0 ? null
+                    :
+                    <div className="likeNum">{likesArr.length}</div>
                 }
             </div>
             )}
@@ -29,9 +37,17 @@ const PostIndexItem = (props) => {
                 <img className="ImagePost" src={props.post.media}/>
                 <div>{props.post.body}</div>  
                 {likesArr.includes(props.currentUser.id) ?
-                    <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    </div>
                     :
-                    <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    </div>
+                }
+                {likesArr.length == 0 ? null
+                    :
+                    <div className="likeNum">{likesArr.length}</div>
                 }
             </div>
         )}
@@ -40,15 +56,19 @@ const PostIndexItem = (props) => {
         
         post = (
             <div className="eachIndexItem">
-                <div className="profileOrb">{props.users[props.post.user_id].username}</div>
+                {/* <img >{props.users[props.post.user_id].username}</div> */}
                 <div className="PostIndexItem">
                     <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
                     <div className="indexTitle">{props.post.title}</div>
                     <div className="indexBody">{props.post.body}</div>
                     {likesArr.includes(props.currentUser.id) ? 
+                    <div id="heart">
                         <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    </div>
                         :   
+                    <div id="heart">
                         <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button> 
+                    </div>
                     }
                     {likesArr.length == 0 ? null 
                     :
@@ -65,9 +85,17 @@ const PostIndexItem = (props) => {
                 <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
                 <a href={`https://${props.post.title}`} className="actualLink" rel="external">{props.post.title}</a>
                 {likesArr.includes(props.currentUser.id) ?
-                    <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    </div>
                     :
-                    <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    </div>
+                }
+                {likesArr.length == 0 ? null
+                    :
+                    <div className="likeNum">{likesArr.length}</div>
                 }
             </div>
         )}
@@ -80,9 +108,17 @@ const PostIndexItem = (props) => {
                 </audio>
                 <div className="indexBody">{props.post.body}</div>
                 {likesArr.includes(props.currentUser.id) ?
-                    <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    </div>
                     :
-                    <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    </div>
+                }
+                {likesArr.length == 0 ? null
+                    :
+                    <div className="likeNum">{likesArr.length}</div>
                 }
             </div>
         )}
@@ -94,9 +130,17 @@ const PostIndexItem = (props) => {
                     <source src={props.post.media} />
                 </video>
                 {likesArr.includes(props.currentUser.id) ?
-                    <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.removeLike(props.post.id)}><i id="heart-fill" className="fas fa-heart fa-lg"></i></button>
+                    </div>
                     :
-                    <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    <div id="heart">
+                        <button onClick={() => props.createLike(props.post.id)}><i id="heart-empty" className="far fa-heart fa-lg"></i></button>
+                    </div>
+                }
+                {likesArr.length == 0 ? null
+                    :
+                    <div className="likeNum">{likesArr.length}</div>
                 }
             </div>
         )}

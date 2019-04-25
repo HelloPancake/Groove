@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 
 const NavBar = (props) => {
+    
     return(
         <div className="parentDiv">
             <nav className="bar">
@@ -22,6 +23,7 @@ const NavBar = (props) => {
             <nav className="dummyNav"></nav>
         </div>
     )
+    
 }
 
 export default NavBar;

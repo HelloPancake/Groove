@@ -18,7 +18,7 @@ const PostForm = () => {
 
          
             <Link to="/new/photo" className="buttonPhoto">
-                <div className="PhotoIcon"><i className="fas fa-camera-retro fa-2x"></i></div>
+                <div className="PhotoIcon"><i className="fas fa-camera-retro fa-3x"></i></div>
                 <div className="PhotoText">Photo</div>
             </Link>
       
@@ -29,7 +29,7 @@ const PostForm = () => {
             </div>
 
             <Link to="/new/quote" className="buttonQuote">
-                <div className="QuoteIcon"><i className="fas fa-quote-left fa-2x"></i></div>
+                <div className="QuoteIcon"><i className="fas fa-quote-left fa-3x"></i></div>
                 <div className="QuoteText">Quote</div>
             </Link>
 
@@ -39,7 +39,7 @@ const PostForm = () => {
             </div>
 
             <Link to="/new/link" className="buttonLink">
-                <div className="LinkIcon"><i className="fas fa-link fa-2x"></i></div>
+                <div className="LinkIcon"><i className="fas fa-link fa-3x"></i></div>
                 <div className="LinkText">Link</div>
             </Link>
 
@@ -49,7 +49,7 @@ const PostForm = () => {
             </div>
 
             <Link to="/new/audio" className="buttonAudio">
-                <div className="AudioIcon"><i className="fas fa-headphones fa-2x"></i></div>
+                <div className="AudioIcon"><i className="fas fa-headphones fa-3x"></i></div>
                 <div className="AudioText">Audio</div>
             </Link>
 
@@ -59,7 +59,7 @@ const PostForm = () => {
             </div>
 
             <Link to="/new/video" className="buttonVideo">
-                <div className="VideoIcon"><i className="fas fa-video fa-2x"></i></div>
+                <div className="VideoIcon"><i className="fas fa-video fa-3x"></i></div>
                 <div className="VideoText">Video</div>
             </Link>
            

@@ -17,7 +17,7 @@ const App = () => (
         </header>
         
         <Route path="/" component={Main} />
-        {/* <ProtectedRoute path="/new/text" component={PostCreateContainer} /> */}
+        <ProtectedRoute path="/show/user" component={PostCreateContainer} />
         <AuthRoute path="/login" component={LogInFormContainer} />
         <AuthRoute path="/signup" component={SignUpFormContainer} />
     </div>

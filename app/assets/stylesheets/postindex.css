@@ -18,7 +18,9 @@
     font-size: 12pt;
     color: grey;
     display: flex;
-    margin-left: 55vh;
+    margin-left: 55.5vh;
+    margin-top: .5vh;
+
 }
 
 #heart-fill {
@@ -76,3 +78,8 @@
     margin-bottom: 0;
 }
 
+#heart {
+    display: flex;
+    margin-left: 55vh;
+
+}

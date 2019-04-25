@@ -8,22 +8,17 @@ class SessionForm extends React.Component {
             username: '',
             password: '',
             email: '',
-            
-            
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    
     componentWillUnmount(){
         this.props.clearSessionErrors();    
     }
-    
     update(field) {
         return e => this.setState({
             [field]: e.currentTarget.value
         });
     }
-
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
@@ -32,14 +27,8 @@ class SessionForm extends React.Component {
             username: '',
             password: '',
             email: ''})
-       
-
     }
-
-   
-
     renderErrors() {
-        
         return (
             <ul>
                 {this.props.errors.map((error, i) => (
@@ -50,38 +39,30 @@ class SessionForm extends React.Component {
             </ul>
         );
     }
-
     render() {
-        
-
-        
     return (
      <div >
             <div className="homebackground"></div>
             <div className="login-form-container">
         <form onSubmit={this.handleSubmit} className="login-form-box">
             <div className="title-text-head">groove</div>
-             <div className="title-text-underhead"> </div>
-             {/* Please {this.props.formType} or {this.props.navLink} */}
-                    
-             <div className="login-form">
+                <div className="title-text-underhead"> </div>
+                {/* Please {this.props.formType} or {this.props.navLink} */}
                         
-            <label>
+                <div className="login-form">          
+                 <label>
                 <input type="text"
-                                value={this.state.username}
-                                onChange={this.update('username')}
-                                className="login-username"
-                                placeholder="username"
+                        value={this.state.username}
+                        onChange={this.update('username')}
+                        className="login-username"
+                        placeholder="username"
                 />
                 </label>
                 <div className="grey-border">
                     <div></div>
                 </div>
-
-
                 {this.props.formType == 'Log In' ? (null) : (
-                    <>
-                        
+                    <>  
                         <label>
                             <input type="text"
                                 value={this.state.email}
@@ -94,12 +75,8 @@ class SessionForm extends React.Component {
                             <div className="grey-border">
                                 <div></div>
                             </div>
-                </>)
+                    </>)
                 }
-                
-               
-
-
                 <label>
                     <input type="password"
                         value={this.state.password}
@@ -112,9 +89,7 @@ class SessionForm extends React.Component {
                 
                         
             {this.props.errors.length < 1 ? (null) : <div className="errors">{this.renderErrors()}</div> }
-                        
-                        
-                    <input className="session-submit" type="submit" value={this.props.formType} />
+                        <input className="session-submit" type="submit" value={this.props.formType} />
             </div>
             </form>
             </div>

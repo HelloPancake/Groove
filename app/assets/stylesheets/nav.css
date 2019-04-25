@@ -54,8 +54,9 @@ nav {
     font-size: 40pt;
     margin-left: 3vh;
     position: relative;
-    bottom: 3vh;
+    bottom: 1.5vh;
     height: 100%;
+
 
 }
 
@@ -124,5 +125,10 @@ nav {
 }
 
 .parentDiv {
+  background-color: rgb(25, 46, 85);
+  /* position: absolute; */
+}
+
+.parentDivInside {
   background-color: rgb(25, 46, 85);
 }
