@@ -54,7 +54,7 @@ nav {
     font-size: 40pt;
     margin-left: 3vh;
     position: relative;
-    bottom: 1.5vh;
+    bottom: 1vh;
     height: 100%;
 
 
@@ -89,8 +89,14 @@ nav {
   align-items: center;
   align-content: center;
   justify-content: space-between;
+}
 
-
+.logoGroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
 }
 
 .house {
@@ -100,6 +106,7 @@ nav {
 
 .bar {
   position: fixed;
+  align-items: center;
   background-color: transparent;
   -webkit-box-shadow:0px 0px 1px grey;
  -moz-box-shadow:0px 0px 1px grey;

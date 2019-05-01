@@ -11,6 +11,11 @@ class Api::UsersController < ApplicationController
         end
     end
 
+    def show
+        @posts = Post.where(user_id: params[:id])
+        render :show
+    end
+
     private
     def user_params
         params.require(:user).permit(:username, :password, :email)

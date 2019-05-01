@@ -19,9 +19,9 @@ export const receivePost = (payload) => {
     user: payload.user
     })
 }
-const removePost = (post) => ({
+const removePost = (id) => ({
     type: REMOVE_POST,
-    postId: post.id
+    postId: id
 })
 
 export const createImagePost = (post) => (dispatch) => {
@@ -54,7 +54,7 @@ export const editPost = (post) => (dispatch) => {
 }
 export const deletePost = (id) => (dispatch) => {
     return (
-        APIUtil.deletePost(id).then(post => dispatch(removePost(post)))
+        APIUtil.deletePost(id).then(() => dispatch(removePost(id)))
     )
 }
 

@@ -18,21 +18,16 @@
     font-size: 12pt;
     color: grey;
     display: flex;
-    margin-left: 55.5vh;
-    margin-top: .5vh;
+    flex-direction: row; 
+    /* margin-left: 55.5vh; */
+    /* margin-top: .3vh; */
 
 }
 
 #heart-fill {
     color: rgb(248, 81, 81);
-    position: relative;
-    
+}
 
-}
-#heart-empty {
-    display: flex;
-   
-}
 
 .PostIndexItem {
     background-color: white;
@@ -52,12 +47,12 @@
 }
 
 .IndexItemUser {
-    margin-bottom: 3vh;
+    margin-bottom: 2vh;
 }
 
 .ImagePost {
     border-radius: .5vh;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
    
 }
 
@@ -79,8 +74,43 @@
     margin-bottom: 0;
 }
 
-#heart {
+/* #heart {
     display: flex;
     margin-left: 55vh;
 
+} */
+
+.changes {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteButton {
+    padding-right: 1vh;
+}
+
+.likeandCount {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.deleteButton {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#deleteButton {
+    background-color: rgb(163, 163, 163);
+    color: white;
+    height: 3vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    border-radius: 1vh;
+    
 }

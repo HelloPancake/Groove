@@ -25,6 +25,8 @@ class PostIndex extends React.Component {
                     createLike={this.props.createLike}
                     removeLike={this.props.removeLike}
                     currentUser={this.props.currentUser}
+                    deletePost={this.props.deletePost}
+                    editPost={this.props.editPost}
                     
                 />
             )

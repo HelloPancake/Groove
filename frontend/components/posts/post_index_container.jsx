@@ -19,9 +19,9 @@ const mapDispatchToProps = (dispatch) => {
     return({
         showAllPosts: () => dispatch(showAllPosts()),
         createLike: (post_id) => dispatch(createLike(post_id)),
-        removeLike: (post_id) => dispatch(removeLike(post_id))
-        // deletePost: (id) => dispatch(deletePost(id)),
-        // editPost: (post) => dispatch(editPost(post))
+        removeLike: (post_id) => dispatch(removeLike(post_id)),
+        deletePost: (id) => dispatch(deletePost(id)),
+        editPost: (post) => dispatch(editPost(post))
     })
 }
 

@@ -3,7 +3,6 @@ class Api::PostsController < ApplicationController
 
     def index
         @posts = Post.all
-        
     end
 
     def show
@@ -12,7 +11,6 @@ class Api::PostsController < ApplicationController
     end
 
     def create
-        
         @post = Post.new(post_params)
 
         if params[:post][:media]
@@ -20,8 +18,6 @@ class Api::PostsController < ApplicationController
         end
 
         @post.user_id = current_user.id
-
-
 
         if @post.save!
             render :show

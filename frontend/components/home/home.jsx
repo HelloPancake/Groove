@@ -53,8 +53,10 @@ class Home extends React.Component {
             //                 </div>
             //             </div>
             //             <div className="section Two">
-            //                 <div id="centerLetter">g</div>
-            //                 <i id="CD" className="fas fa-compact-disc fa-4x"></i>
+            //                 <div className="homebackgroundtwo">
+            //                     <i id="centerLetter">g</i>
+            //                     {/* <i id="CD" className="fas fa-compact-disc fa-4x"></i> */}
+            //                 </div>
             //             </div>
             //         </div>
             //         )}}/>
@@ -75,7 +77,6 @@ class Home extends React.Component {
                 </form>
                 </div>
             </div>
-           
             </div>
         )
     }

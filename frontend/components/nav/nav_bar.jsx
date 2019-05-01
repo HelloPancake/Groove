@@ -10,7 +10,7 @@ const NavBar = (props) => {
     return(
         <div className="parentDiv">
             <nav className="bar">
-                <div>
+                <div className="logoGroup">
                     <Link to="/" className="logo">g</Link>
                 </div>
                 
