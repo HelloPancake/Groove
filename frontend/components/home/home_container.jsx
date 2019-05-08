@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import React from 'react';
-import { logIn } from '../../actions/session_actions'
+import { logIn } from '../../actions/session_actions';
 
 import Home from './home';
 

@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PostIndexItem = (props) => {
+    
     let post;
     let likesArr = [];
     {props.post.likers.forEach(like => {
@@ -11,7 +13,7 @@ const PostIndexItem = (props) => {
     if (props.post.post_type == "quote"){
         post = (
             <div className="PostIndexItem">
-                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <Link className="postLink" to={`/profile/${props.post.user_id}`}><div className="IndexItemUser">{props.users[props.post.user_id].username}</div></Link>
                 <div className="QuoteFeed">"{props.post.title}"</div>  
                 <div className="QuoteSourceFeed">-{props.post.body}</div>  
                 <div className="changes">
@@ -40,7 +42,7 @@ const PostIndexItem = (props) => {
     else if (props.post.post_type == "image"){
         post = (
             <div className="PostIndexItem">
-                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <Link className="postLink" to={`/profile/${props.post.user_id}`}><div className="IndexItemUser">{props.users[props.post.user_id].username}</div></Link>
                 <img className="ImagePost" src={props.post.media}/>
                 <div>{props.post.body}</div>  
                 <div className="changes">
@@ -71,7 +73,7 @@ const PostIndexItem = (props) => {
             <div className="eachIndexItem">
                 {/* <img >{props.users[props.post.user_id].username}</div> */}
                 <div className="PostIndexItem">
-                    <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                    <Link className="postLink" to={`/profile/${props.post.user_id}`}><div className="IndexItemUser">{props.users[props.post.user_id].username}</div></Link>
                     <div className="indexTitle">{props.post.title}</div>
                     <div className="indexBody">{props.post.body}</div>
                     <div className="changes">
@@ -103,7 +105,7 @@ const PostIndexItem = (props) => {
     else if (props.post.post_type == "link"){
         post = (
             <div className="PostIndexItem">
-                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <Link className="postLink" to={`/profile/${props.post.user_id}`}><div className="IndexItemUser">{props.users[props.post.user_id].username}</div></Link>
                 <a href={`https://${props.post.title}`} className="actualLink" rel="external">{props.post.title}</a>
                 <div className="changes">
                     {props.post.user_id == props.currentUser.id ?
@@ -133,7 +135,7 @@ const PostIndexItem = (props) => {
     else if (props.post.post_type == "audio"){
         post = (
             <div className="PostIndexItem">
-                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <Link className="postLink" to={`/profile/${props.post.user_id}`}><div className="IndexItemUser">{props.users[props.post.user_id].username}</div></Link>
                 <audio controls className="indexAudio">
                     <source src={props.post.media} />
                 </audio>
@@ -166,7 +168,7 @@ const PostIndexItem = (props) => {
     else if (props.post.post_type == "video"){
         post = (
             <div className="PostIndexItem">
-                <div className="IndexItemUser">{props.users[props.post.user_id].username}</div>
+                <Link className="postLink" to={`/profile/${props.post.user_id}`}><div className="IndexItemUser">{props.users[props.post.user_id].username}</div></Link>
                 <video controls loop className="indexVideo"  >
                     <source src={props.post.media} />
                 </video>

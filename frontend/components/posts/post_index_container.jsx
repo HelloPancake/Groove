@@ -5,6 +5,7 @@ import PostIndex from './post_index';
 import {createLike, removeLike} from '../../actions/like_actions';
 
 const mapStateToProps = (state) => {
+    
     let posts = Object.values(state.posts)
    
 

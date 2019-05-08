@@ -39,6 +39,6 @@ export const logIn = (user) => (dispatch) => {
 
 export const logOut = () => (dispatch) => {
     return (
-        APIUtil.logOut().then(user => dispatch(logOutCurrentUser()))
+        APIUtil.logOut().then(() => dispatch(logOutCurrentUser()))
     )
 }

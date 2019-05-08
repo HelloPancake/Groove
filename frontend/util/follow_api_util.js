@@ -1,3 +1,6 @@
+
+
+
 export const createFollow = (post) => {
     return (
         $.ajax({
@@ -18,3 +21,4 @@ export const removeFollow = (post) => {
         })
     )
 }
+

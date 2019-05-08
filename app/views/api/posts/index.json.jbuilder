@@ -10,7 +10,6 @@
         json.set! post.user.id do
             json.partial! '/api/users/user', user: post.user   
         end
-
     end
 
 end

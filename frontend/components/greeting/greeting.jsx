@@ -18,6 +18,7 @@ const Greeting = ({ currentUser, logOut, location, history }) => {
     const LogOut = () => ((
         <div className="header-group">
             <Link className="house" to="/"><i className="fas fa-home fa-2x"></i></Link>
+            <Link className="profile" to={`/profile/${currentUser.id}`}><i className="fas fa-user fa-2x"></i></Link>
             <button className="logout" onClick={handleLogOut}>Log Out</button>
         </div>
     ));

@@ -104,6 +104,11 @@ nav {
   color: white;
 }
 
+.profile {
+  color: white;
+  margin-right: 2vh;
+}
+
 .bar {
   position: fixed;
   align-items: center;
@@ -116,9 +121,8 @@ nav {
 }
 
 .dummyNav {
-  margin-top: 3vh;
+  margin-top: 1vh;
   background-color: transparent;
-  height: 8vh;
   z-index: -2;
 }
 

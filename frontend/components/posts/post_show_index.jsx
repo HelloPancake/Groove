@@ -2,7 +2,7 @@ import React from 'react';
 import PostIndexItem from './post_index_item';
 
 
-class PostIndex extends React.Component {
+class PostShowIndex extends React.Component {
     constructor(props) {
         super(props);
 
@@ -10,15 +10,22 @@ class PostIndex extends React.Component {
 
     componentDidMount() {
         
-        this.props.showAllPosts();
+        this.props.fetchShowPosts(this.props.userId);
     }
 
     render() {
+        // let posts = this.props.posts.filter( post => {
+        //     return(
+        //         post.user_id == this.props.currentUser.id
+        //         )
+        //     })
+            
+        
         
         let posts = this.props.posts.map(post => {
-            
+
             return (
-                
+
                 <PostIndexItem
                     key={`${post.id}`}
                     post={post}
@@ -28,19 +35,24 @@ class PostIndex extends React.Component {
                     currentUser={this.props.currentUser}
                     deletePost={this.props.deletePost}
                     editPost={this.props.editPost}
-                    
+                    fetchShowPosts={this.props.fetchShowPosts}
+
                 />
             )
         }).reverse();
 
         return (
+            <>
+                <div className="solidDiv"></div>
+
             <div className="PostIndexContainer">
                 <ul>
                     {posts}
                 </ul>
             </div>
+            </>
         );
     }
 }
 
-export default PostIndex;
+export default PostShowIndex;
