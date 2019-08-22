@@ -11,9 +11,8 @@ import NavBar from './nav/nav_bar';
 
 const App = () => (
     <div>
-           
             <NavBar />
-           
+
         <header>
         </header>
         
@@ -22,6 +21,8 @@ const App = () => (
         <AuthRoute path="/signup" component={SignUpFormContainer} />
         <ProtectedRoute path="/show/user" component={PostCreateContainer} />
         <ProtectedRoute path="/profile/:id" component={PostShowIndexContainer} />
+        
+        
 
     </div>
 );

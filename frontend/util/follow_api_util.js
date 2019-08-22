@@ -1,6 +1,4 @@
 
-
-
 export const createFollow = (post) => {
     return (
         $.ajax({

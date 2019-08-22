@@ -14,12 +14,6 @@ const DashBoard = () => {
 
     return (
 
-        // <>
-        //     <div className="solidDiv"></div>
-        //     <DashboardContainer />
-        //     <PostIndexContainer />
-
-       
         <Switch>
             <Route path="/new/text" component={PostCreateContainer}/>
             <Route path="/new/photo" component={ImageCreateContainer}/>
@@ -40,7 +34,6 @@ const DashBoard = () => {
             }}/>
 
         </Switch>
-    // </> 
     )
         
 }

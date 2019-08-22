@@ -44,8 +44,8 @@ class PostShowIndex extends React.Component {
         return (
             <>
                 <div className="solidDiv"></div>
-
             <div className="PostIndexContainer">
+                <div className='MainBackground'></div>
                 <ul>
                     {posts}
                 </ul>

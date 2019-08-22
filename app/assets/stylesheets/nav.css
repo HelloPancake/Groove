@@ -125,15 +125,19 @@ nav {
   background-color: transparent;
   z-index: -2;
 }
-
+/* 
 .solidDiv {
-  background-color: rgb(25, 46, 85);
-  position: fixed;
-  top:0;
+  background-color: rgb(25, 46, 85); 
+  background-color: red;
+  
+  background: url('AdobeStock_128690367.jpeg');
+  object-fit: contain;   
+  position: fixed; 
+  top:0; 
   height: 7vh;
   width: 100%;
   z-index: 2;
-}
+} */
 
 .parentDiv {
   background-color: rgb(25, 46, 85);

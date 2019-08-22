@@ -30,6 +30,34 @@
   z-index: 0;
 }
 
+.MainBackground {
+  background-image: image-url('AdobeStock_128690367.jpeg');
+  // background-position: center;
+  background-size: 180%;
+  background-position: 170% 0%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.solidDiv {
+  /* background-color: rgb(25, 46, 85); */
+  /* background-color: red; */
+  
+  background-image: image-url('AdobeStock_128690367.jpeg');
+  background-position: 170% 0%;
+  background-size: 180%;
+  position: fixed; 
+  top:0; 
+  height: 7vh;
+  width: 100%;
+  z-index: 2;
+}
+
 .login-form-box {
   // display: flex;
   // justify-content: center;

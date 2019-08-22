@@ -14,13 +14,12 @@ function Main({ currentUser }) {
         }
         else
         {
-            
             return (
                 <>
                     <div className="solidDiv"></div>
+                    <div className='MainBackground'></div>
                     <DashboardContainer />
                     <PostIndexContainer />
-                    
                 </>
             )
         }
@@ -30,7 +29,6 @@ function Main({ currentUser }) {
 }
 
 const msp = (state) => {
-    
     return {
         currentUser: state.session.id
     }
