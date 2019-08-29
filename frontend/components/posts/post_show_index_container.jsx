@@ -7,7 +7,6 @@ const mapStateToProps = (state, ownProps) => {
     
     let posts = Object.values(state.posts)
     
-    
     return ({
         posts: posts,
         users: state.entities.users,

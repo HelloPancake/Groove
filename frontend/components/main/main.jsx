@@ -4,22 +4,31 @@ import DashboardContainer from '../dashboard/dashboard_container';
 import PostIndexContainer from '../posts/post_index_container';
 import HomeContainer from '../home/home_container';
 import { Route } from 'react-router-dom';
-import {withRouter} from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import SidePiece from '../side_piece/sidePiece';
+
 
 function Main({ currentUser }) {
     if (currentUser) {
-        
-        if(location.hash.match(/profile/)){
+
+        if (location.hash.match(/profile/)) {
             return null
         }
-        else
-        {
+        else {
             return (
                 <>
                     <div className="solidDiv"></div>
                     <div className='MainBackground'></div>
-                    <DashboardContainer />
-                    <PostIndexContainer />
+                    <div className="main-content">
+                        <div>
+                            <DashboardContainer />
+                            <PostIndexContainer />
+                        </div>
+                            <SidePiece />
+
+                        
+                    </div>
+
                 </>
             )
         }

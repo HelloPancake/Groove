@@ -1,0 +1,6 @@
+.main-content {
+    display: flex;
+    flex-direction: row;
+    position:relative;
+    padding-top: 3vh;
+}

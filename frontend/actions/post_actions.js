@@ -15,6 +15,7 @@ const receiveAllPosts = (payload) => ({
     posts: payload.posts,
     users: payload.users
 })
+
 export const receivePost = (payload) => {
     return ({
     
@@ -63,7 +64,12 @@ export const deletePost = (id) => (dispatch) => {
 }
 
 export const fetchShowPosts = (id) => (dispatch) => {
+    
     return (
-        APIUtil.fetchShowPosts(id).then(posts => dispatch(receiveUserPosts(posts)))
+        APIUtil.fetchShowPosts(id).then(posts => {
+         
+         return dispatch(receiveUserPosts(posts))
+        })
+            
     )
 }

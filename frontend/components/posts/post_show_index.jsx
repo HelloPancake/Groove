@@ -9,23 +9,13 @@ class PostShowIndex extends React.Component {
     }
 
     componentDidMount() {
-        
         this.props.fetchShowPosts(this.props.userId);
     }
 
     render() {
-        // let posts = this.props.posts.filter( post => {
-        //     return(
-        //         post.user_id == this.props.currentUser.id
-        //         )
-        //     })
-            
-        
         
         let posts = this.props.posts.map(post => {
-
             return (
-
                 <PostIndexItem
                     key={`${post.id}`}
                     post={post}
@@ -36,7 +26,6 @@ class PostShowIndex extends React.Component {
                     deletePost={this.props.deletePost}
                     editPost={this.props.editPost}
                     fetchShowPosts={this.props.fetchShowPosts}
-
                 />
             )
         }).reverse();
@@ -44,6 +33,8 @@ class PostShowIndex extends React.Component {
         return (
             <>
                 <div className="solidDiv"></div>
+                <div>showing all posts from</div>
+                {/* <div className="IndexItemUser">{props.users[props.post.user_id].username}</div> */}
             <div className="PostIndexContainer">
                 <div className='MainBackground'></div>
                 <ul>
