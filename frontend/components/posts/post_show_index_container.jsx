@@ -4,9 +4,7 @@ import PostShowIndex from './post_show_index';
 import { createLike, removeLike } from '../../actions/like_actions';
 
 const mapStateToProps = (state, ownProps) => {
-    
     let posts = Object.values(state.posts)
-    
     return ({
         posts: posts,
         users: state.entities.users,

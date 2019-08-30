@@ -12,11 +12,6 @@ class User < ApplicationRecord
     foreign_key: :user_id,
     class_name: :Post
 
-    # has_many :notes,
-    # primary_key: :id,
-    # foreign_key: :user_id,
-    # class_name: :Notes
-
     has_many :likes,
     primary_key: :id,
     foreign_key: :user_id,

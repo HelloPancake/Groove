@@ -5,7 +5,6 @@ import PostIndex from './post_index';
 import {createLike, removeLike} from '../../actions/like_actions';
 
 const mapStateToProps = (state) => {
-    
     let posts = Object.values(state.posts)
    
 
@@ -17,6 +16,7 @@ const mapStateToProps = (state) => {
     })
 }
 const mapDispatchToProps = (dispatch) => {
+    
     return({
         showAllPosts: () => dispatch(showAllPosts()),
         createLike: (post_id) => dispatch(createLike(post_id)),

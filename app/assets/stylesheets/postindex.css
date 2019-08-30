@@ -1,4 +1,38 @@
+.showIndex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: transparent;
+    /* width: 65vh; */
+    margin-left: auto;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 3vh;
+}
 
+.UserName{
+    display: flex;
+    justify-content: center;
+    font-size: 45pt;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2vh;
+    margin-top:.5vh;
+}
+
+.userIndexTitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26pt;
+    margin-top: 8vh;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
 .PostIndexContainer {
     display: flex;
     justify-content: center;
@@ -9,7 +43,7 @@
     margin-left: 32vh;
     z-index: 0;
     position: relative;
-    
+    margin-bottom: 3vh;
 }
 
 
@@ -19,8 +53,7 @@
     color: grey;
     display: flex;
     flex-direction: row; 
-    /* margin-left: 55.5vh; */
-    /* margin-top: .3vh; */
+
 
 }
 

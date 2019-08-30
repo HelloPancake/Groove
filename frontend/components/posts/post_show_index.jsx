@@ -13,6 +13,9 @@ class PostShowIndex extends React.Component {
     }
 
     render() {
+        if(!this.props.users[this.props.userId]){
+            return null
+        }
         
         let posts = this.props.posts.map(post => {
             return (
@@ -33,10 +36,11 @@ class PostShowIndex extends React.Component {
         return (
             <>
                 <div className="solidDiv"></div>
-                <div>showing all posts from</div>
-                {/* <div className="IndexItemUser">{props.users[props.post.user_id].username}</div> */}
-            <div className="PostIndexContainer">
+                <div className="userIndexTitle">all posts from</div>
+                
+                <div className="UserName">{this.props.users[this.props.userId].username}</div>
                 <div className='MainBackground'></div>
+            <div className="showIndex">
                 <ul>
                     {posts}
                 </ul>

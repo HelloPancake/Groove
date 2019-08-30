@@ -1,12 +1,12 @@
-if @user
-    json.partial! "api/users/user", user: @user
-end
-
 # if @user
-#     json.set! "user" do 
-#         json.partial! "api/users/user", user: @user
-#     end
+#     json.partial! "api/users/user", user: @user
 # end
+
+if @user
+    json.set! "users" do 
+        json.partial! "api/users/user", user: @user
+    end
+end
 
 
 if @posts

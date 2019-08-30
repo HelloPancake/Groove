@@ -25,9 +25,7 @@ function Main({ currentUser }) {
                             <PostIndexContainer />
                         </div>
                             <SidePiece />
-
-                        
-                    </div>
+                        </div>
 
                 </>
             )

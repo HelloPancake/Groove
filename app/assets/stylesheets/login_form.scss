@@ -45,9 +45,6 @@
 }
 
 .solidDiv {
-  /* background-color: rgb(25, 46, 85); */
-  /* background-color: red; */
-  
   background-image: image-url('AdobeStock_128690367.jpeg');
   background-position: 170% 0%;
   background-size: 180%;
@@ -59,13 +56,6 @@
 }
 
 .login-form-box {
-  // display: flex;
-  // justify-content: center;
-  // align-content: center;
-  // flex-direction: column;
-  // top: 20vh;
-  // padding-top:10vh;
-  // margin-top: 100vh;
   -webkit-animation: formfadein 1.0s linear forwards;
   animation: formfadein 1.0s linear forwards;
 }
