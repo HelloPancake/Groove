@@ -12,7 +12,10 @@ class Api::UsersController < ApplicationController
     end
 
     def show
-        @posts = Post.where(user_id: params[:id])
+        # debugger≤÷
+        @post = Post.where(user_id: params[:id])
+        @user = User.where(id: params[:id])[0]
+
         render :show
     end
 

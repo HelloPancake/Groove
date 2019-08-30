@@ -6,7 +6,9 @@ class Api::PostsController < ApplicationController
     end
 
     def show
+        debugger
         @post = Post.find_by(id: params[:id])
+        @user = User.where(id: params[:id])[0]
         render :show
     end
 
