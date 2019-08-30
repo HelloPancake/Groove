@@ -9,12 +9,12 @@ const usersReducer = (state = {}, action) => {
     Object.freeze(state);
     switch (action.type) {
         case RECEIVE_CURRENT_USER:
-            return merge({}, state, { [action.currentUser.id]: action.currentUser });
+            return merge({}, state, { [action.currentUser.id]: action.currentUser.user });
         case RECEIVE_ALL_POSTS:
             return merge({}, state, action.users)
-        // case RECEIVE_USER_POSTS:
-        //     debugger
-        //     return merge({}, state, action.users)
+        case RECEIVE_USER_POSTS:
+            debugger
+            return merge({}, state, { [action.user.id]: action.user })
         case RECEIVE_POST:
             return merge({}, state, {[action.user.id]: action.user})
      

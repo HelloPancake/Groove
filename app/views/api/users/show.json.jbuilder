@@ -2,6 +2,13 @@ if @user
     json.partial! "api/users/user", user: @user
 end
 
+# if @user
+#     json.set! "user" do 
+#         json.partial! "api/users/user", user: @user
+#     end
+# end
+
+
 if @posts
     @posts.each do |post|
         json.posts do

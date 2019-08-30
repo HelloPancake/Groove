@@ -7,7 +7,8 @@ export const REMOVE_POST = 'REMOVE_POST';
 
 const receiveUserPosts = (posts) => ({
     type: RECEIVE_USER_POSTS,
-    posts: posts.posts
+    posts: posts.posts,
+    user: posts.user
 })
 
 const receiveAllPosts = (payload) => ({
