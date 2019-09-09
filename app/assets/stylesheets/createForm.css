@@ -43,9 +43,12 @@
     position: relative;
     font-size: 14pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-left: 0.35vh;
+    padding-left: 1vh;
     padding-top: 2vh;
     height: 15vh;
+    margin-top: 2vh;
+    background-color: lightgray;
+    border-radius: 1vh;
 }
 
 .postButton {

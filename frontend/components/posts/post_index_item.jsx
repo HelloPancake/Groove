@@ -52,7 +52,7 @@ const PostIndexItem = (props) => {
                         </div>
                         :
                         <div></div>
-                    }
+                    } 
                     <div className="likeandCount">
                         <div className="likeNum">{likesArr.length}&nbsp;likes&nbsp;</div>
                         {likesArr.includes(props.currentUser.id) ?

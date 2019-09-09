@@ -64,7 +64,6 @@ class VideoCreateForm extends React.Component {
 
                     <form onSubmit={this.handleSubmit} className="createForm">
                         <div className="postUser">{this.props.currentUser.username}</div>
-                        {/* <input placeholder="Title" className="createTitle" type="text" value={this.state.title} onChange={this.update("title")} /> */}
                         <input className="uploadFileButton" type="file" onChange={this.handleFile} />
                         {preview}
                         <textarea placeholder="Body" className="createBody" type="text" value={this.state.body} onChange={this.update("body")}></textarea>
