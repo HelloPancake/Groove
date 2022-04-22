@@ -7,7 +7,7 @@
     "@babel/preset-react": "^7.0.0",
     "@fullpage/react-fullpage": "^0.1.14",
     "babel-loader": "^8.0.5",
-    "fullpage.js": "^3.0.5",
+    "fullpage.js": "^4.0.5",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "react-redux": "^6.0.1",
